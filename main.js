@@ -33,7 +33,7 @@ const displayUsers = (arrayOfUsers) => {
 
       li.appendChild(userImage)
       allUsers.appendChild(li)
-
+// Added working button for additional info on users
       const button = document.createElement('button')
       button.innerHTML = 'Additional Info'
       button.onclick = () => {
