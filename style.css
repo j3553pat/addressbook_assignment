@@ -1,0 +1,11 @@
+.image {
+    padding: 2rem;
+
+}
+
+body {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
