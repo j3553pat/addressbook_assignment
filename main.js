@@ -16,7 +16,19 @@ const displayUsers = (arrayOfUsers) => {
   allUsers.innerHTML = "";
   arrayOfUsers.map((user) => {
     const li = document.createElement("li");
-    li.innerHTML = `Name: ${user.name.first}  ${user.name.last} <br> Email: ${user.email} <br> Gender:${user.gender}`;
+    li.innerHTML = `Name: ${user.name.first}  ${user.name.last}`;
+    const userImage = document.createElement("img");
+    userImage.src = user.picture.medium;
+    userImage.className = "image";
+    li.appendChild(userImage);
     allUsers.appendChild(li);
+    const button = document.createElement("button");
+    button.innerHTML = 'additional info'
+    button.onclick = () => {
+      const div = document.createElement('div')
+    div.innerHTML = `Gender:  ${user.gender} <br> Email: ${user.email} <br> Phone: ${user.phone} <br> location: ${user.location.street.number} ${user.location.street.name} ${user.location.country}`;
+    li.appendChild(div)
+    }
+    li.appendChild(button)
   });
 };
