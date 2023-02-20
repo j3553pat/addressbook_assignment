@@ -24,14 +24,16 @@ const displayUsers = (arrayOfUsers) => {
     allUsers.innerHTML = ""
     arrayOfUsers.map((user) => {
       const li = document.createElement('li')
-      // const text = document.createTextNode(arrayOfUsers)
-      li.innerHTML = `Name: ${user.name.first} ${user.name.last}`
-
       const userImage = document.createElement('img')
       userImage.src = user.picture.medium
       userImage.className = 'image'
+      const text = document.createTextNode(`Name: ${user.name.first} ${user.name.last}`)
+      // li.innerHTML = `Name: ${user.name.first} ${user.name.last}`
+      
+      
 
       li.appendChild(userImage)
+      li.appendChild(text)
       allUsers.appendChild(li)
 // Added working button for additional info on users
       const button = document.createElement('button')
