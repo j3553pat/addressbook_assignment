@@ -25,9 +25,9 @@ const displayUsers = (arrayOfUsers) => {
     const button = document.createElement("button");
     button.innerHTML = 'additional info'
     button.onclick = () => {
-      const div = document.createElement('div')
-    div.innerHTML = `Gender:  ${user.gender} <br> Email: ${user.email} <br> Phone: ${user.phone} <br> location: ${user.location.street.number} ${user.location.street.name} ${user.location.country}`;
-    li.appendChild(div)
+      const color = document.createElement('div')
+    color.innerHTML = `Gender:  ${user.gender} <br> Email: ${user.email} <br> Phone: ${user.phone} <br> location: ${user.location.street.number} ${user.location.street.name} ${user.location.country}`;
+    li.appendChild(color)
     }
     li.appendChild(button)
   });
