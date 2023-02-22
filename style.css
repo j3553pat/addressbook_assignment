@@ -22,3 +22,31 @@ li{
     align-items: center;
 }
 
+body {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button {
+    display: flex;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+}
+
+#all-users {
+    padding: 3rem ;
+}
+
+div {
+    margin: 5px 0 5px 0;
+    background-color: aqua;
+    border-radius: 5px;
+    box-shadow: 10px 5px 2px 1px rgba(12, 12, 14, 0.2);
+}
+
