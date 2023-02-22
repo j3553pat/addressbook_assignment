@@ -42,17 +42,13 @@ const displayUsers = (arrayOfUsers) => {
         const div = document.createElement('div')
         div.innerHTML = `Gender:  ${user.gender} <br> Email: ${user.email} <br> Phone: ${user.phone} <br> location: ${user.location.street.number} ${user.location.street.name} ${user.location.country}`
         li.appendChild(div)
+        button.style.display = "none";
       }
     
       li.appendChild(button)
 
-      
-      
-
-      
     })
-
-    
   
   }
 
+ 
